@@ -1,0 +1,1 @@
+Simple Example of an HTML5 Blog Layout Using Sematic Markup

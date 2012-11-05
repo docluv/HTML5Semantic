@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<!-- Conditional comment for mobile ie7 http://blogs.msdn.com/b/iemobile/ -->
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> 
+
+<html class="no-js">
+<!--<html class="no-js" manifest="@Href("~/default.appcache?v=1.29")">-->
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta content="" name="description">
+        <meta content="" name="author">
+        
+        <meta content="True" name="HandheldFriendly">
+        <meta content="320" name="MobileOptimized">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <link href="@Href("~/favicon.ico")" rel="shortcut icon">
+        <link href="@Href("~/img/h/apple-touch-icon.png")" rel="apple-touch-icon-precomposed" sizes="114x114">
+        <link href="@Href("~/img/m/apple-touch-icon.png")" rel="apple-touch-icon-precomposed" sizes="72x72">
+        <link href="@Href("~/img/l/apple-touch-icon-precomposed.png")" rel="apple-touch-icon-precomposed">
+        <link href="@Href("~/img/l/apple-touch-icon.png")" rel="shortcut icon">
+
+        <meta name="msapplication-TileImage" content="@Href("~/img/mobile-movies-icon-t.png")"/>
+        <meta name="msapplication-TileColor" content="#865689"/>
+
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+
+        <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+        <link href="@Href("~/img/l/splash.png")" rel="apple-touch-startup-image">
+        <meta content="on" http-equiv="cleartype">
+
+        @RenderSection("Header", required: false)
+
+        <link href="@Href("~/css/site.css?v=1")" rel="stylesheet">
+    </head>
+    <body>
+
+        <section id="content">
+            <header class="main-header">
+                <h1 class="view-title">HTML5 Blog</h1>
+            </header>
+            <section id="main">
+                @RenderBody()
+            </section>
+
+            <footer class="toolbar">
+                <section class="toolbar-top-menu">
+                </section>
+                <section class="toolbar-sub-menu">
+                    <ul class="toolbar-sub-menu-nav-list">
+                    </ul>
+                </section>
+            </footer>
+
+        </section>
+
+
+@RenderSection("scripts", required: false)
+
+    </body>
+</html>
